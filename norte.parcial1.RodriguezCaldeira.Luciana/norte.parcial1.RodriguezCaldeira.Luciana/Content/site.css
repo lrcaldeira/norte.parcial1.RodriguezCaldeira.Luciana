@@ -50,12 +50,12 @@ em {
     margin: 0 auto;
 }
 
-.logo {
-    width: 150px;
-    height: 40px;
-    margin-left: 5px;
+/*.imag {*/
+    /*width: 10px;
+    height: 20px;*/
+    /*margin-left: 5px;
     margin-bottom: 5px;
-}
+}*/
 
 nav ul {
     margin: 0;
@@ -85,12 +85,12 @@ section {
     background-color: #fafafa;
     padding: 5px;
     overflow: auto;
-    /*float: left;*/
     float: right;
     width: 79%;
     margin-top: 5px;
     margin-bottom: 5px;
     min-height: 450px;
+  
 }
 
 aside {
@@ -100,9 +100,8 @@ aside {
     margin-top: 5px;
     margin-bottom: 5px;
     border:solid red;
-    padding-bottom:4%;
     text-align:left;
-  
+    line-height:100px;
    
 }
 

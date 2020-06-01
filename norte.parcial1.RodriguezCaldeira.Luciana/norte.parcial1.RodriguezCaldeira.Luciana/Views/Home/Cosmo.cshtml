@@ -5,3 +5,80 @@
 
 <h2>Cosmo</h2>
 
+<table>
+
+    <tr>
+
+        <th> Siglo </th>
+        <br />
+        <td>
+            <input id="txtSiglo" type="text" placeholder="siglo de descubrimiento" />
+        </td>
+    </tr>
+
+
+    <tr>
+        <br />
+        <th> Nombre </th>
+        <br />
+        <td>
+            <input id="txtNombre" type="text" placeholder="nombre de la constelación" />
+        </td>
+    </tr>
+
+    <th></th>
+    <td>
+        <input id="btnSave" type="button" value="Grabar" />
+        <input id="btnList" type="button" value="Listar productos" />
+    </td>
+
+
+</table>
+<hr />
+
+<div id="resultado">
+
+
+</div>
+
+
+@section scripts {
+    <script>
+
+        var Cosmos = new Array();
+
+        function Cosmo() {
+
+            this.setSiglo = function (value) { this._siglo = value; }
+            this.getSiglo = function () { return this._siglo; }
+
+            this.setNombre = function (value) { this._nombre = value; }
+            this.getNombre = function () { return this._nombre; }
+        }
+
+     
+
+        ("#btnSave").click(function () {
+
+            var cos = new Cosmo();
+            cos.setSiglo($("#txtSiglo").val());
+            cos.setNombre($("#txtNombre").val());
+
+            Cosmos.push(cos);
+            $("#txtSiglo").val("");
+            $("#txtNombre").val("");
+        });
+
+        ("#btnList").click(function () {
+
+            var ctl = $("#resultado");
+            ctl.html("");
+            $.each(Cosmos, function (i, e) {
+                ctl.append("Siglo: " + e.getSiglo() + " - " + "Nombre: " + e.getNombre() + "<br />");
+            });
+        });
+
+    </script>
+
+}
+
