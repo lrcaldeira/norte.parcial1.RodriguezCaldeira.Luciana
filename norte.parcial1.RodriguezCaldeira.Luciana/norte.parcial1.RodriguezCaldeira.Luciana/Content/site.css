@@ -1,8 +1,4 @@
-﻿/*IMPORTANTE - No modificar estos estilos, ya que son imprescindibles para que la pagina se vea correctamente.*/
-
-/*IMPORTANTE - No modificar estos estilos, ya que son imprescindibles para que la pagina se vea correctamente.*/
-
-html, body {
+﻿html, body {
     height: 100%;
 }
 
@@ -10,16 +6,12 @@ h1, h2, h3, p {
     margin: 0;
     padding: 0;
 }
-
+/*
 img {
     border: none;
-}
-
-/*p {
-    text-align: justify;
 }*/
 
-/*clase anterior*/
+
 h1 {
     font-family: Verdana, Calibri, sans-serif;
     font-size: 1.2em
@@ -43,38 +35,12 @@ em {
     background-color: #7d99e0;
 }
 
-/* --------------- layout ------------------------*/
+
 
 #container {
     width: 1080px;
     margin: 0 auto;
 }
-
-/*.imag {*/
-    /*width: 10px;
-    height: 20px;*/
-    /*margin-left: 5px;
-    margin-bottom: 5px;
-}*/
-
-nav ul {
-    margin: 0;
-    padding: 0;
-}
-
-    nav ul li {
-        list-style: none;
-        display: inline;
-    }
-
-        nav ul li > a {
-            padding: 5px;
-            text-decoration: none;
-            background-color: powderblue;
-            border-radius: 5px;
-            margin-left: 5px;
-        }
-
 header {
     display: block;
     background-color: #286af0;
@@ -82,14 +48,15 @@ header {
 }
 
 section {
-    background-color: #fafafa;
+    background-color: #ccc;;
     padding: 5px;
     overflow: auto;
     float: right;
     width: 79%;
     margin-top: 5px;
     margin-bottom: 5px;
-    min-height: 450px;
+    image-orientation:initial;
+
   
 }
 
@@ -114,3 +81,12 @@ footer {
     color: #fafafa;
 }
 
+
+
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    text-align:center;
+}
